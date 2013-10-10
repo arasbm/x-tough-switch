@@ -1,10 +1,17 @@
 (function() {
-  var template = '<div>tough switch test</div>';
+  var template = '<div class="tough-switch-wrapper">' +
+    'tough switch test</div>';
 
   xtag.register('x-tough-switch', {
     lifecycle: {
       created: function() {
+        this.setAttribute('tabindex', this.getAttribute('tabindex') || 0);
         this.innerHTML = template;
+        this.onText = this.onText;
+        this.offText = this.offText;
+        this.checked = this.checked;
+        this.onIcon = this.onIcon;
+        this.offIcon = this.offIcon;
       },
       inserted: function() {},
       removed: function() {},
