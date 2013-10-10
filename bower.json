@@ -1,10 +1,12 @@
 {
-  "name": "stub",
-  "description": "",
+  "name": "tough-switch",
+  "description": "A toggle switch that is inentionally made hard to toggle to avoid accidental change",
   "version": "0.1.0",
   "keywords": [
-    "web-components",    
-    "x-tag"
+    "web-components",
+    "x-tag",
+    "switch",
+    "toggle"
   ],
   "main": [
     "src/main.js",
