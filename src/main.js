@@ -1,6 +1,8 @@
 (function() {
   var template = '<div class="tough-switch-wrapper">' +
-    'tough switch test</div>';
+    'tough switch test' +
+    '<div id="handle"></div>' +
+    '</div>';
 
   xtag.register('x-tough-switch', {
     lifecycle: {
