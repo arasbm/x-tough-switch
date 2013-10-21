@@ -18,6 +18,14 @@
 
     });
 
+    xtag.addEvent(container, 'touchmove', function(e) {
+      e.preventDefault();
+      var touchPoint = e.changedTouches[0];
+      handle.style.top = touchPoint.clientY + 'px';
+      handle.style.left = touchPoint.clientX + 'px';
+
+    });
+
     xtag.addEvent(container, 'swipe', function(e) {
       e.preventDefault();
       console.log('swipe', e);
@@ -55,8 +63,8 @@
     },
     events: {
      'tap:preventable:delegate(div)': function(e) {
-        handle.style.top = e.clientY + 'px';
-        handle.style.left = e.clientX + 'px';
+        //handle.style.top = e.clientY + 'px';
+        //handle.style.left = e.clientX + 'px';
         console.log('tapped', e);
       }
     },
