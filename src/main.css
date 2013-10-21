@@ -1,10 +1,14 @@
-x-tough-switch {
-  display: block; 
-  background: red;
+div.container {
+  display: block;
+  height: 4rem;
+  width: 100%;
+  background: #AA1010;
 }
 
-div#handle {
+div.handle {
   position: absolute;
+  display: block;
+  left: 20rem;
   width: 2rem;
   height: 2rem;
   border-radius: 1rem;
